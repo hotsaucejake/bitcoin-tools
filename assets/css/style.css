@@ -1,0 +1,208 @@
+.btn {
+    border: 0px;
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn-lg {
+    border-radius: 4px;
+}
+
+.btc-jumbotron {
+    padding: 0px;
+    color: inherit;
+    background: url(../img/jumbo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.btc-jumbotron .content {
+    color: #fff;
+    margin-left: 30%;
+    text-align: center;
+}
+
+.btc-jumbotron .content h2,
+.h2 {
+    font-size: 31px;
+    padding: 20px;
+}
+
+.btc-jumbotron p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 200;
+    opacity: 0.8;
+}
+
+.btc-jumbotron .content .form-control {
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+    border: 0px;
+}
+
+.btc-jumbotron .content .btn-default {
+    background: #f7931a;
+    color: #fff;
+    border: 0px;
+    padding: 11.5px 30px;
+}
+
+.btc-jumbotron .content .btn-default:hover {
+    background: #d67c0f;
+    border: 0px;
+    color: #eee;
+    margin-left: 0px;
+}
+
+.btc-footer {
+    background: rgba(44, 62, 80, 1.0);
+    padding: 50px;
+    margin-top: 60px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btc-footer a {
+    color: #fff;
+}
+
+.btc-footer a:hover {
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.btc-box {
+    border: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    border-radius: 6px;
+    background: #fafafa;
+    margin: 10px 10px;
+    width: 31.3%;
+}
+
+.btc-box-inner {
+    padding: 20px;
+    text-align: center;
+}
+
+.btc-tools-inner {
+    padding: 20px;
+    text-align: center;
+}
+
+.btc-tools-inner p {
+    margin: 25px 0 25px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    height: 450px;
+    left: 0;
+    width: 100%;
+    padding: 100px;
+    margin-bottom: 30px;
+}
+
+.error {
+    background: #F06070;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    opacity: 1.0;
+}
+
+.error a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.success {
+    background: #30b929;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    opacity: 1.0;
+}
+
+.success a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.muted {
+    color: #999;
+}
+
+.orange-text {
+    color: #f7931a;
+}
+
+.logo {
+}
+
+.foot-note {
+    color: #888;
+    font-style: italic;
+    padding: 10px;
+    float: right;
+}
+
+.footer {
+    background: rgba(44, 62, 80, 1.0);
+    padding: 50px;
+    margin-top: 60px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+@media only screen and (max-device-width:480px) {
+
+.btc-jumbotron .content {
+    margin-left: 0;
+}
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.8);
+        bottom: 0;
+        height: 500px;
+        left: 0;
+        width: 100%;
+        padding: 90px 0;
+        margin-bottom: 30px;
+    }
+
+    .btc-jumbotron .content h2, .h2 {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .btc-box {
+        width: 94%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .btc-jumbotron {
+        background-attachment: fixed;
+    }
+}

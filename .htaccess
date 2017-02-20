@@ -1,0 +1,28 @@
+options -multiviews
+options -indexes
+
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteBase /
+
+   RewriteRule ^valid-address?$ tools.php?tool=valid_address&%{QUERY_STRING}
+   RewriteRule ^address-balance?$ tools.php?tool=address_balance&%{QUERY_STRING}
+   RewriteRule ^address-received?$ tools.php?tool=address_received&%{QUERY_STRING}
+   RewriteRule ^address-sent?$ tools.php?tool=address_sent&%{QUERY_STRING}
+   RewriteRule ^address-to-hash?$ tools.php?tool=address_to_hash&%{QUERY_STRING}
+   RewriteRule ^hash-to-address?$ tools.php?tool=hash_to_address&%{QUERY_STRING}
+</IfModule>
+
+<IfModule mod_security.c>
+   SecFilterEngine off
+   SecFilterScanPOST off
+</IfModule>
+
+<IfModule mod_headers.c>
+   <FilesMatch "\.(gif|jpe?g|png|ico|css|js|xml|swf)$">
+      Header set Cache-Control "max-age=604800, public"
+   </FilesMatch>
+   <FilesMatch "\.(php|js|css|xml|gz)$">
+      Header append Vary: Accept-Encoding
+   </FilesMatch>
+</IfModule>
